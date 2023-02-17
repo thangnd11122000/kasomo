@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  trailingSlash: true,
   images: {
-    domains: ["tailwindui.com"],
-    formats: ["image/avif", "image/webp"],
+    loader: "imgix",
+    path: "/",
   },
 };
 
